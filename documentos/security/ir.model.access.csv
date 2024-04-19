@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+documentos.access_pau_documentos,access_pau_documentos,documentos.model_pau_documentos,base.group_user,1,1,1,1
+documentos.access_pau_codigos,access_pau_codigos,documentos.model_pau_codigos,base.group_user,1,1,1,1

@@ -1,0 +1,25 @@
+.half-rectangle {
+    position: relative;
+    height: 200px; /* ajusta la altura según sea necesario */
+  }
+  .half-rectangle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px; /* grosor de la línea vertical */
+    height: 100%;
+    background-color: black; /* color de la línea vertical */
+  }
+  .left-half {
+    background-color: #f0f0f0; /* color del lado izquierdo del rectángulo */
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  .right-half {
+    background-color: #e0e0e0; /* color del lado derecho del rectángulo */
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
