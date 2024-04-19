@@ -138,7 +138,6 @@ class gestoDocumentos(models.Model):
             
             
     def action_preview_document(self):
-        # Logic to preview the first page (similar to your existing controller logic)
         return {
             'type': 'ir.actions.act_url',
             'url': '/documentos/preview/{}'.format(self.nombre_archivo),
@@ -146,7 +145,6 @@ class gestoDocumentos(models.Model):
         }
 
     def action_view_full_document(self):
-        # Logic to view the full document
         return {
             'type': 'ir.actions.act_url',
             'url': '/documentos/full/{}'.format(self.nombre_archivo),
@@ -154,7 +152,6 @@ class gestoDocumentos(models.Model):
         }
 
     def action_download_document(self):
-        # Logic to download the document
         return {
             'type': 'ir.actions.act_url',
             'url': '/documentos/download/{}'.format(self.nombre_archivo),

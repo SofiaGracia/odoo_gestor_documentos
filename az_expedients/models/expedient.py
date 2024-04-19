@@ -25,7 +25,7 @@ class expedient(models.Model):
 	description = fields.Text(string = 'Descripción', tracking = 1)
 	observations = fields.Text(string = 'Observaciones', tracking = 1)
 	interested_persons = fields.Many2many('res.partner', string = 'Interesados')
-	codigos = fields.One2many('az_expedients.documentos', 'expediente_principal', string = 'Documentos')
+	documentos = fields.One2many('az_expedients.documentos', 'expediente_principal', string = 'Documentos')
 	tasks_ids = fields.One2many('az_expedients.task', 'expedient_id', string = 'Tareas')
 
 	message_id = fields.Char('Message ID')
