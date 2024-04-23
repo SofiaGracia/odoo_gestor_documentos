@@ -1,0 +1,84 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="pau_documentos_documentos_tree">
+            <field name="name">pau_documentos_documentos_tree</field>
+            <field name="model">pau.documentos</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="codigoActividad" />
+                    <field name="ejercicio" />
+                    <field name="numeroExpediente" />
+                    <field name="titulo" />
+                    <field name="file_url" />
+                    <field name="description" />
+                    <field name="codigo" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pau_documentos_documentos_form">
+            <field name="name">pau_documentos_documentos_form</field>
+            <field name="model">pau.documentos</field>
+            <field name="arch" type="xml">
+                <form string="Test">
+                    <header>
+                        <button string="Previsualizar" type="object" name="action_preview_document"
+                            class="oe_highlight" />
+                        <button string="Ver completo" type="object" name="action_view_full_document"
+                            class="oe_highlight" />
+                        <button string="Descargar" type="object" name="action_download_document"
+                            class="oe_highlight" />
+                    </header>
+                    <sheet>
+
+                        <group>
+                            <group>
+                                <field name="codigoActividad" />
+                                <field name="ejercicio" />
+                                <field name="numeroExpediente" />
+                                <field name="numOrdenDocEnExp" />
+                                <field name="abreviaturaTipoDocumento" />
+                                <field name="titulo" />
+                                <field name="tipo_archivo" />
+                                <field name="file_url" />
+                            </group>
+                            <group>
+                                <field name="description" />
+                                <field name="expedientes" widget="many2many_tags" />
+                                <field name="expediente_principal" widget="many2one_tags" />
+                                <field name="codigo" widget="many2one_tags" />
+                                <field name="interesados" widget="many2many_tags" />
+                                <field name="documento_file" widget="binary"
+                                    filename="nombre_archivo" attachment="True" />
+                                <field name="nombre_archivo" invisible="1" />
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" />
+                        <field name="activity_ids" />
+                        <field name="message_ids" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pau_documentos_documentos_search">
+            <field name="name">pau_documentos_documentos search</field>
+            <field name="model">pau.documentos</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="codigoActividad" />
+                    <field name="ejercicio" />
+                    <field name="numeroExpediente" />
+                    <field name="titulo" />
+                    <field name="file_url" />
+                    <field name="description" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

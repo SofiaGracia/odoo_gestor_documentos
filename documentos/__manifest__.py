@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',
+        'views/documentos.xml'
     ],
     
     'css': [
