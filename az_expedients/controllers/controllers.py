@@ -7,15 +7,15 @@ import subprocess
 
 class DocumentoPDFController(http.Controller):
 
-    @http.route(['/documentos/preview/<string:nombre_documento>'], type='http', auth="user")
-    def ver_primera_pagina_pdf(self, nombre_documento, **kw):
-        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', nombre_documento)], limit=1)
+    @http.route(['/documentos/preview/<string:name>'], type='http', auth="user")
+    def ver_primera_pagina_pdf(self, name, **kw):
+        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', name)], limit=1)
         if not documento:
             return request.not_found()
         # Aquí asumimos que 'file_url' es una ruta absoluta al archivo en el servidor
         ruta_archivo = documento.file_url
         tipo_archivo = documento.tipo_archivo
-        nombre_archivo = documento.nombre_archivo
+        nombre_archivo = documento.name
         
         
         if tipo_archivo == "pdf":
@@ -65,15 +65,15 @@ class DocumentoPDFController(http.Controller):
                     return request.make_response(pdf_temporal.getvalue(), headers)
             return request.not_found()
 
-    @http.route(['/documentos/full/<string:nombre_documento>'], type='http', auth="user")
-    def ver_pagina_pdf(self, nombre_documento, **kw):
-        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', nombre_documento)], limit=1)
+    @http.route(['/documentos/full/<string:name>'], type='http', auth="user")
+    def ver_pagina_pdf(self, name, **kw):
+        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', name)], limit=1)
         if not documento:
             return request.not_found()
         # Aquí asumimos que 'file_url' es una ruta absoluta al archivo en el servidor
         ruta_archivo = documento.file_url
         tipo_archivo = documento.tipo_archivo
-        nombre_archivo = documento.nombre_archivo
+        nombre_archivo = documento.name
         
         
         if tipo_archivo == "pdf":
@@ -124,9 +124,8 @@ class DocumentoPDFController(http.Controller):
         
         
     @http.route(['/documentos/download/<string:nombre_documento>'], type='http', auth="user")
-    def download_documento(self, nombre_documento):
-        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', nombre_documento)], limit=1)
-        ruta_archivo = documento.file_url
+    def download_documento(self, name):
+        documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', name)], limit=1)
         with open(documento.file_url, 'rb') as file:
             file_content = file.read()
         

@@ -4,7 +4,7 @@ import os
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
-class gestoDocumentos(models.Model):
+class Documentos(models.Model):
     _name = 'pau.documentos'  # Nombre técnico del modelo en Odoo
     _description = 'gestor'  # Descripción del modelo
     _inherit = ['mail.thread', 'mail.activity.mixin']
@@ -138,22 +138,32 @@ class gestoDocumentos(models.Model):
             
             
     def action_preview_document(self):
-        return {
-            'type': 'ir.actions.act_url',
-            'url': '/documentos/preview/{}'.format(self.nombre_archivo),
-            'target': 'new',
-        }
+        
+        if self.file_url and self.name:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '/documentos/preview/{}'.format(self.name),
+                'target': 'new',
+            }
+        else:
+            raise ValidationError('No ha proporcionado una url o nombre validos')
 
     def action_view_full_document(self):
-        return {
-            'type': 'ir.actions.act_url',
-            'url': '/documentos/full/{}'.format(self.nombre_archivo),
-            'target': 'new',
-        }
+        if self.file_url and self.name:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '/documentos/full/{}'.format(self.name),
+                'target': 'new',
+            }
+        else:
+            raise ValidationError('No ha proporcionado una url o nombre validos')
 
     def action_download_document(self):
-        return {
-            'type': 'ir.actions.act_url',
-            'url': '/documentos/download/{}'.format(self.nombre_archivo),
-            'target': 'self',
-        }
+        if self.file_url and self.name:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '/documentos/download/{}'.format(self.name),
+                'target': 'self',
+            }
+        else:
+            raise ValidationError('No ha proporcionado una url o nombre validos')

@@ -104,7 +104,7 @@
 								<field name="interested_persons"/>
 							</page>
 							<page string="Documentos" name="documents_ids">
-								<field name="codigos"/>
+								<field name="documentos"/>
 							</page>
 						</notebook>
 					</sheet>

@@ -5,7 +5,7 @@ from odoo.exceptions import ValidationError
 # Tuve que crear esta clase heredada porque si relaciono el campo expediente_principal desde el modulo pau.documentos da un error de unknown_id
 
 
-class Codigos(models.Model):  # Definir una clase de modelo en Odoo
+class Documentos(models.Model):  # Definir una clase de modelo en Odoo
     _name = "az_expedients.documentos"
     _inherit = "pau.documentos"
     
