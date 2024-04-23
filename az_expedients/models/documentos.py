@@ -1,6 +1,5 @@
 import os
-from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo import models, fields
 
 # Tuve que crear esta clase heredada porque si relaciono el campo expediente_principal desde el modulo pau.documentos da un error de unknown_id
 

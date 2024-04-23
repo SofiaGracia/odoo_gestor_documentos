@@ -6,12 +6,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name" />
-                    <field name="codigoActividad" />
-                    <field name="ejercicio" />
-                    <field name="numeroExpediente" />
-                    <field name="titulo" />
                     <field name="file_url" />
-                    <field name="description" />
                     <field name="codigo" />
                 </tree>
             </field>
@@ -41,7 +36,6 @@
                                 <field name="abreviaturaTipoDocumento" />
                                 <field name="titulo" />
                                 <field name="tipo_archivo" />
-                                <field name="file_url" />
                             </group>
                             <group>
                                 <field name="description" />
@@ -51,6 +45,7 @@
                                 <field name="interesados" widget="many2many_tags" />
                                 <field name="documento_file" widget="binary"
                                     filename="nombre_archivo" attachment="True" />
+                                <field name="file_url" />
                                 <field name="nombre_archivo" invisible="1" />
                             </group>
                         </group>
