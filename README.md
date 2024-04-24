@@ -9,4 +9,5 @@ Este módulo para Odoo, denominado `Documentos`, ofrece una solución robusta pa
 
 # Instalación
 
-Al instalar el modulo de Expedientes se instalara el modulo de documentos
+- Al instalar el modulo de Expedientes se instalara el modulo de documentos
+- Cambiar la Url del controlador del modulo de expedientes(az_expedientes/controllers/controllers.py) a la url donde almaceneis los expedientes
