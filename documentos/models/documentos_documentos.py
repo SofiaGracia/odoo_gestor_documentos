@@ -11,52 +11,52 @@ class Documentos(models.Model):
 
     # Definición de campos del modelo
     # Campo calculado para el nombre del documento
-    name = fields.Char(string='Nombre del Documento', compute='_compute_name', store=True, tracking = 1)
+    name = fields.Char(compute='_compute_name', store=True, tracking = 1)
     
     # Campo para el código de actividad (requerido, tamaño 3)
-    codigoActividad = fields.Char(string='Codigo de la actividad', size=3, required=True, tracking = 1)
+    codigoActividad = fields.Char(size=3, required=True, tracking = 1)
     
     # Campo para el ejercicio (requerido, tamaño 2)
-    ejercicio = fields.Char(string='Ejercicio', size=2, required=True, tracking = 1)
+    ejercicio = fields.Char(size=2, required=True, tracking = 1)
     
     # Campo para el número de expediente (requerido, tamaño 4)
-    numeroExpediente = fields.Char(string='Número de Expediente', size=4, required=True, tracking = 1)
+    numeroExpediente = fields.Char(size=4, required=True, tracking = 1)
     
     # Campo para el núm. orden del documento en el expediente (requerido, tamaño 3)
-    numOrdenDocEnExp = fields.Char(string='Núm. orden del documento en el expediente', size=3, required=True, tracking = 1)
+    numOrdenDocEnExp = fields.Char(size=3, required=True, tracking = 1)
     
     # Campo para la abreviatura del tipo de documento (requerido, tamaño 2)
-    abreviaturaTipoDocumento = fields.Char(string='Abreviatura del tipo de documento', size=2, required=True, tracking = 1)
+    abreviaturaTipoDocumento = fields.Char(size=2, required=True, tracking = 1)
     
     # Campo para el título (requerido, tamaño máximo 70)
-    titulo = fields.Char(string='Titulo', size=70, required=True, tracking = 1)
+    titulo = fields.Char(size=70, required=True, tracking = 1)
     
     # Campo para la extensión del documento
-    tipo_archivo = fields.Char(string='Tipo de Archivo', tracking = 1)
+    tipo_archivo = fields.Char(tracking = 1)
     
     # Campo para el nombre del documento
-    nombre_archivo = fields.Char(string='Nombre del Archivo', tracking = 1)
+    nombre_archivo = fields.Char(tracking = 1)
     
     # Campo para la URL del documento
-    file_url = fields.Char(string='URL del Fichero', tracking = 1)
+    file_url = fields.Char(tracking = 1)
     
     # Campo para la descripción del documento
-    description = fields.Text(string='Descripción', tracking = 1)
+    description = fields.Text(tracking = 1)
     
     # Relación con el modelo 'az_expedients.expedient', no funciona, necesario heredar en el modulo de expedientes
-    expediente_principal = fields.Many2one(comodel_name="az_expedients.expedient", string='Expediente Principal')
+    expediente_principal = fields.Many2one(comodel_name="az_expedients.expedient")
     
     # Relación con el modelo 'az_expedients.expedient'
-    expedientes = fields.Many2many('az_expedients.expedient', 'documentos_expedientes_rel', 'documento_id', 'expediente_id', string='Expedientes', tracking = 1)
+    expedientes = fields.Many2many('az_expedients.expedient', 'documentos_expedientes_rel', 'documento_id', 'expediente_id', tracking = 1)
     
     # Relación con el modelo 'pau.codigos' para el codigo del documento
     codigo = fields.Many2one('pau.codigos', string='Codigo', tracking = 1)
     
     # Relación con el modelo 'res.partner' para la lista de interesados
-    interesados = fields.Many2many('res.partner', 'documentos_partners_rel', 'documento_id', 'partner_id', string='Lista de interesados', tracking = 1)
+    interesados = fields.Many2many('res.partner', 'documentos_partners_rel', 'documento_id', 'partner_id', tracking = 1)
     
     # Campo para almacenar temporalmente el documento
-    documento_file = fields.Binary(string='Archivo', tracking = 1)
+    documento_file = fields.Binary(tracking = 1)
     
     message_id = fields.Char('Message ID')
     

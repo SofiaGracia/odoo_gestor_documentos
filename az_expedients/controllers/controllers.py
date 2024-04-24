@@ -123,7 +123,7 @@ class DocumentoPDFController(http.Controller):
             return request.not_found()
         
         
-    @http.route(['/documentos/download/<string:nombre_documento>'], type='http', auth="user")
+    @http.route(['/documentos/download/<string:name>'], type='http', auth="user")
     def download_documento(self, name):
         documento = request.env['az_expedients.documentos'].sudo().search([('name', '=', name)], limit=1)
         with open(documento.file_url, 'rb') as file:
@@ -133,6 +133,6 @@ class DocumentoPDFController(http.Controller):
             file_content,
             [
                 ('Content-Type', 'application/octet-stream'),
-                ('Content-Disposition', content_disposition(documento.nombre_archivo))
+                ('Content-Disposition', content_disposition(documento.name))
             ]
         )

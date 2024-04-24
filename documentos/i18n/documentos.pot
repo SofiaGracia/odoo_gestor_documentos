@@ -1,0 +1,458 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* documentos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-24 11:32+0000\n"
+"PO-Revision-Date: 2024-04-24 11:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "AA"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__abreviaturaTipoDocumento
+msgid "Abreviatura del tipo de documento"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Abreviatura del tipo de documento, como DE para resolución."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__documento_file
+msgid "Archivo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__name
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__codigo
+msgid "Codigo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__codigoActividad
+msgid "Codigo de la actividad"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model,name:documentos.model_pau_codigos
+msgid "Codigos para expedientes y documentos"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__create_uid
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__create_date
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Código del documento."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Código único para identificar la actividad."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Descargar"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__descripcion
+msgid "Descripcion del codigo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__description
+msgid "Descripción"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Descripción detallada aquí"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__display_name
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Ej: 0001"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Ej: DE"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__ejercicio
+msgid "Ejercicio"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Ejercicio del documento."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Escribe un título aquí"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid ""
+"Espacio para escribir una descripción extensa del contenido o contexto del "
+"documento."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__expediente_principal
+msgid "Expediente Principal"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Expediente principal asociado a este documento."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__expedientes
+msgid "Expedientes"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__id
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__id
+msgid "ID"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Introduce el código"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Introduce el tipo del documento."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos____last_update
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__write_uid
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_codigos__write_date
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__interesados
+msgid "Lista de interesados"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_id
+msgid "Message ID"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: documentos
+#. odoo-javascript
+#: code:addons/documentos/static/src/xml/form_button.xml:0
+#, python-format
+msgid "NEW BUTTON"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__nombre_archivo
+msgid "Nombre del Archivo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__name
+msgid "Nombre del Documento"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__numOrdenDocEnExp
+msgid "Núm. orden del documento en el expediente"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Número asignado al expediente."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__numeroExpediente
+msgid "Número de Expediente"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Número de orden del documento dentro del expediente."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Número secuencial"
+msgstr ""
+
+#. module: documentos
+#: model:res.groups,name:documentos.module_management
+msgid "Overtime"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Partes interesadas o afectadas por el expediente."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Previsualizar"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Ruta del documento."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Seleccione uno o varios expedientes relacionados."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid ""
+"Sube el documento relacionado. Asegúrate de que el formato sea compatible."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Subir archivo"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Test"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__tipo_archivo
+msgid "Tipo de Archivo"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Tipo de archivo, como pdf, odt o ods."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__titulo
+msgid "Titulo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,help:documentos.field_pau_documentos__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Título del documento o expediente."
+msgstr ""
+
+#. module: documentos
+#: model:ir.model.fields,field_description:documentos.field_pau_documentos__file_url
+msgid "URL del Fichero"
+msgstr ""
+
+#. module: documentos
+#: model_terms:ir.ui.view,arch_db:documentos.pau_documentos_documentos_form
+msgid "Ver completo"
+msgstr ""
+
+#. module: documentos
+#: model:ir.model,name:documentos.model_pau_documentos
+msgid "gestor"
+msgstr ""

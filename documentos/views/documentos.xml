@@ -29,24 +29,38 @@
 
                         <group>
                             <group>
-                                <field name="codigoActividad" />
-                                <field name="ejercicio" />
-                                <field name="numeroExpediente" />
-                                <field name="numOrdenDocEnExp" />
-                                <field name="abreviaturaTipoDocumento" />
-                                <field name="titulo" />
-                                <field name="tipo_archivo" />
+                                <field name="codigoActividad" placeholder="Introduce el código"
+                                    help="Código único para identificar la actividad." string="Codigo de la actividad" />
+                                <field name="ejercicio" placeholder="AA"
+                                    help="Ejercicio del documento." string="Ejercicio" />
+                                <field name="numeroExpediente" placeholder="Ej: 0001"
+                                    help="Número asignado al expediente." string="Número de Expediente" />
+                                <field name="numOrdenDocEnExp" placeholder="Número secuencial"
+                                    help="Número de orden del documento dentro del expediente." string="Núm. orden del documento en el expediente" />
+                                <field name="abreviaturaTipoDocumento" placeholder="Ej: DE"
+                                    help="Abreviatura del tipo de documento, como DE para resolución." string="Abreviatura del tipo de documento" />
+                                <field name="titulo" placeholder="Escribe un título aquí"
+                                    help="Título del documento o expediente." string="Titulo" />
+                                <field name="tipo_archivo" placeholder="Introduce el tipo del documento."
+                                    help="Tipo de archivo, como pdf, odt o ods." string="Tipo de Archivo" />
                             </group>
                             <group>
-                                <field name="description" />
-                                <field name="expedientes" widget="many2many_tags" />
-                                <field name="expediente_principal" widget="many2one_tags" />
-                                <field name="codigo" widget="many2one_tags" />
-                                <field name="interesados" widget="many2many_tags" />
+                                <field name="description" placeholder="Descripción detallada aquí"
+                                    help="Espacio para escribir una descripción extensa del contenido o contexto del documento." string="Descripción" />
+                                <field name="expedientes" widget="many2many_tags"
+                                    help="Seleccione uno o varios expedientes relacionados." string="Expedientes relacionados" />
+                                <field name="expediente_principal" widget="many2one_tags"
+                                    help="Expediente principal asociado a este documento." string="Expediente principal" />
+                                <field name="codigo" widget="many2one_tags"
+                                    help="Código del documento." string="Código del documento" />
+                                <field name="interesados" widget="many2many_tags"
+                                    help="Partes interesadas o afectadas por el expediente." string="Lista de interesados" />
                                 <field name="documento_file" widget="binary"
-                                    filename="nombre_archivo" attachment="True" />
-                                <field name="file_url" />
-                                <field name="nombre_archivo" invisible="1" />
+                                    filename="nombre_archivo" attachment="True"
+                                    placeholder="Subir archivo"
+                                    help="Sube el documento relacionado. Asegúrate de que el formato sea compatible." string="Subir archivo" />
+                                <field name="file_url" placeholder=""
+                                    help="Ruta del documento." string="URL del Fichero" />
                             </group>
                         </group>
                     </sheet>
