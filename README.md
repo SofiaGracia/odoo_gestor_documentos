@@ -6,3 +6,7 @@ Este módulo para Odoo, denominado `Documentos`, ofrece una solución robusta pa
 
 - Instalar la libreria de python pdfrw
 - Instalar LibreOffice
+
+# Instalación
+
+Al instalar el modulo de Expedientes se instalara el modulo de documentos
