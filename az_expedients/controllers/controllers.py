@@ -42,7 +42,7 @@ class DocumentoPDFController(http.Controller):
             
             nombre_archivo_base, extension = os.path.splitext(nombre_archivo)
             
-            subprocess.run(["libreoffice", "--headless", "--convert-to", "pdf", ruta_archivo, "--outdir", "/tmp"])
+            subprocess.run(["unoconv", "-f", "pdf", "-o", "/tmp/" + nombre_archivo, ruta_archivo])
 
             ruta_archivo_pdf = os.path.join("/tmp/", nombre_archivo_base + ".pdf")
 
@@ -100,7 +100,7 @@ class DocumentoPDFController(http.Controller):
             
             nombre_archivo_base, extension = os.path.splitext(nombre_archivo)
             
-            subprocess.run(["libreoffice", "--headless", "--convert-to", "pdf", ruta_archivo, "--outdir", "/tmp"])
+            subprocess.run(["unoconv", "-f", "pdf", "-o", "/tmp/" + nombre_archivo, ruta_archivo])
             ruta_archivo_pdf = os.path.join("/tmp", f"{nombre_archivo_base}.pdf")
 
             if os.path.exists(ruta_archivo_pdf):

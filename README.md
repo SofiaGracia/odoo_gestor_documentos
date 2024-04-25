@@ -6,6 +6,7 @@ Este módulo para Odoo, denominado `Documentos`, ofrece una solución robusta pa
 
 - Instalar la libreria de python pdfrw
 - Instalar LibreOffice
+- Instalar unoconv
 
 # Instalación
 

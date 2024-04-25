@@ -44,7 +44,7 @@ class Documentos(models.Model):
     description = fields.Text(tracking = 1)
     
     # Relación con el modelo 'az_expedients.expedient', no funciona, necesario heredar en el modulo de expedientes
-    expediente_principal = fields.Many2one(comodel_name="az_expedients.expedient")
+    expediente_principal = fields.Many2one(comodel_name="az_expedients.expedient", tracking = 1)
     
     # Relación con el modelo 'az_expedients.expedient'
     expedientes = fields.Many2many('az_expedients.expedient', 'documentos_expedientes_rel', 'documento_id', 'expediente_id', tracking = 1)
