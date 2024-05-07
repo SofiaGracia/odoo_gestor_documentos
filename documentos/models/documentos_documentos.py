@@ -62,11 +62,17 @@ class Documentos(models.Model):
     
     message_id = fields.Char('Message ID')
     
-    fecha = fields.Date('Fecha') # (ISAD(G))
+    fecha = fields.Date(tracking = 1) # (ISAD(G))
     
-    creador = fields.One2many('res.partner','Creador del documento') # No se si aqui deberia ir el departamento que lo ha creado, si es asi entonces este campo no deberia ser necesario (ISAD(G))
+    creador = fields.Many2many('res.partner', 'documentos_creators_rel', 'documento_id', 'partner_id', tracking = 1) # No se si aqui deberia ir el departamento que lo ha creado, si es asi entonces este campo no deberia ser necesario (ISAD(G))
+    
+    notas_adicionales = fields.Text(tracking = 1)
+    
+    documentos_relacionados = fields.Many2one('pau.documentos')
     
     # biografica/historia administrativa: no se que hacer aqui de momento (ISAD(G))
+    
+    # Proceso de descripción del documento: Esto lo tenemos implementado en odoo, pero si queremos migrarlo en algun momento posterior igual deberia hacerse un log que guarde los cambios del documento
     
     # Método para obtener el nombre del documento
     @api.depends('numeroExpediente', 'codigoActividad', 'ejercicio', 'titulo','numOrdenDocEnExp','abreviaturaTipoDocumento')
