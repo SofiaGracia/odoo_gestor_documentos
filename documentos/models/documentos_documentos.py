@@ -43,6 +43,8 @@ class Documentos(models.Model):
     # Campo para la descripción del documento
     description = fields.Text(tracking = 1)
     
+    alcance = fields.Text('Alcance y contenido del documento')
+    
     # Relación con el modelo 'az_expedients.expedient', no funciona, necesario heredar en el modulo de expedientes
     expediente_principal = fields.Many2one(comodel_name="az_expedients.expedient", tracking = 1)
     
@@ -59,6 +61,12 @@ class Documentos(models.Model):
     documento_file = fields.Binary(tracking = 1)
     
     message_id = fields.Char('Message ID')
+    
+    fecha = fields.Date('Fecha') # (ISAD(G))
+    
+    creador = fields.One2many('res.partner','Creador del documento') # No se si aqui deberia ir el departamento que lo ha creado, si es asi entonces este campo no deberia ser necesario (ISAD(G))
+    
+    # biografica/historia administrativa: no se que hacer aqui de momento (ISAD(G))
     
     # Método para obtener el nombre del documento
     @api.depends('numeroExpediente', 'codigoActividad', 'ejercicio', 'titulo','numOrdenDocEnExp','abreviaturaTipoDocumento')
