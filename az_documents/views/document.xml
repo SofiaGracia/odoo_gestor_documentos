@@ -1,0 +1,125 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="az_documents_document_tree">
+            <field name="name">az_documents_document_tree</field>
+            <field name="model">az_documents.document</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="Nombre del documento" />
+                    <field name="file_url" string="URL del Fichero" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="az_documents_document_form">
+            <field name="name">az_documents_document_form</field>
+            <field name="model">az_documents.document</field>
+            <field name="arch" type="xml">
+                <form string="Test">
+                    <header>
+                        <button string="Previsualizar" type="object" name="action_preview_document"
+                            class="oe_highlight" />
+                        <button string="Ver completo" type="object" name="action_view_full_document"
+                            class="oe_highlight" />
+                        <button string="Descargar" type="object" name="action_download_document"
+                            class="oe_highlight" />
+                    </header>
+                    <sheet>
+
+                        <group>
+                            <group>
+                                <field name="codigoActividad" placeholder="A99"
+                                help="Aqui va el codigo de la actividad del documento" string="Codigo de la actividad"/>
+                                <field name="ejercicio" placeholder="AA"
+                                    help="Ejercicio del documento." string = "Ejercicio del documento."  />
+                                <field name="numeroExpediente" placeholder="Ej: 0001"
+                                    help="Número asignado al expediente." string="Número de Expediente"
+                                     />
+                                <field name="numOrdenDocEnExp" placeholder="Número secuencial"
+                                    help="Número de orden del documento dentro del expediente."
+                                    string="Núm. orden del documento en el expediente"
+                                     />
+                                <field name="abreviaturaTipoDocumento" placeholder="Ej: DE"
+                                    help="Abreviatura del tipo de documento, como DE para resolución."
+                                    string="Abreviatura del tipo de documento"/>
+                                <field name="titulo" placeholder="Escribe un título aquí"
+                                    help="Título del documento o expediente." string="Titulo" />
+                                <field name="tipo_archivo" string="Tipo de Archivo"
+                                    placeholder="Introduce el tipo del documento."
+                                    help="Tipo de archivo, como pdf, odt o ods."
+                                     />
+                                <field name="register" widget="many2one_tags"
+                                    placeholder="Introduce a el registrador del documento."
+                                    help="Registrador del documento." string = "Persona tramitadora"
+                                     />
+                                <field name="registration_date" string="Fecha"
+                                    help="Fecha de creación de este documento."
+                                     />
+                                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            </group>
+                            <group>
+                                <field name="description" placeholder="Descripción detallada aquí"
+                                    help="Espacio para escribir una descripción extensa del contenido o contexto del documento."
+                                    string="Descripción"/>
+                                <field name="expedientes" widget="many2many_tags" string="Expedientes relacionados"
+                                    help="Seleccione uno o varios expedientes relacionados."
+                                     />
+                                <field name="expedient_id" widget="many2one_tags"
+                                    help="Expediente principal asociado a este documento."
+                                    string="Expediente principal"
+                                     />
+                                <!-- <field name="codigo" widget="many2one_tags"
+                                    help="Código del documento."  /> -->
+                                <field name="interesados" widget="many2many_tags" string="Lista de interesados"
+                                    help="Partes interesadas o afectadas por el expediente."
+                                     />
+                                <field name="documentos_relacionados" widget="many2one_tags"
+                                    help="Documentos relacionados a este documento."
+                                    string="Documentos relacionados"
+                                     />
+                                <field name="notas_adicionales" string="Notas adicionales"
+                                    help="Notas adicionales que no encajan con otro campo de este documento."
+                                     />
+                                <field name="documento_file" widget="binary"
+                                    filename="nombre_archivo" attachment="True"
+                                    placeholder="Subir archivo" string="Subir archivo"
+                                    help="Sube el documento relacionado. Asegúrate de que el formato sea compatible."
+                                     />
+                                <field name="file_url" placeholder="" string="URL del Fichero"
+                                    help="Ruta del documento."  />
+                                <field name="nombre_archivo" />
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" />
+                        <field name="activity_ids" />
+                        <field name="message_ids" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+		<!-- explicit search view definition -->
+
+		<record id="az_documents.document_search_view" model="ir.ui.view">
+			<field name="name">az_documents.document.search.view</field>
+			<field name="model">az_documents.document</field>
+			<field name="arch" type="xml">
+				<search string="Documento">
+					<filter string="Expediente" name="group_expedient_id" context="{'group_by':'expedient_id'}"/>  
+				</search>
+			</field>
+		</record>
+
+		<!-- actions opening views on models -->
+
+		<record model="ir.actions.act_window" id="az_documents.document_action_window">
+			<field name="name">Documentos</field>
+			<field name="res_model">az_documents.document</field>
+			<field name="view_mode">tree,form</field>
+			<field name="context">{"search_default_group_expedient_id":1}</field>
+		</record>
+
+	</data>
+</odoo>

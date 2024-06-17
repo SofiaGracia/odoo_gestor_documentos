@@ -1,0 +1,137 @@
+<odoo>
+	<data>
+		<!-- explicit list view definition -->
+		<record model="ir.ui.view" id="az_padron.citizen_list">
+			<field name="name">az_padron.citizen.list</field>
+			<field name="model">res.partner</field>
+			<field name="arch" type="xml">
+				<tree create="false" export_xlsx="false">
+					<field name="name"/>
+					<field name="phone" />
+					<field name="mobile"/>
+					<field name="email"/>
+					<field name="street"/>
+					<field name="birthday"/>
+					<field name="age"/>
+					<field name="total_views"/>
+					<field name="active_ph"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- explicit form view definition -->
+		<record id="az_padron.citizen_form" model="ir.ui.view">
+			<field name="name">Ciudadano</field>
+			<field name="model">res.partner</field>
+			<field name="mode">primary</field>
+			<field name="arch" type="xml">
+				<form string="Ciudadanos" readonly="true" edit="0">
+					<sheet>
+						<div name="button_box" position="inside">
+							<button
+								class="oe_stat_button"
+								name="open_map"
+								type="object"
+								string="Ubicación"
+								attrs="{'invisible': [('city', '=', False)]}"
+								icon="fa-map-marker"
+							/>
+							<button
+								class="oe_stat_button"
+								name="open_route_map"
+								type="object"
+								string="Como llegar"
+								attrs="{'invisible': [('city', '=', False)]}"
+								icon="fa-car"
+							/>
+						</div>
+						<div class="oe_title mb24">
+							<h1>
+								<field name="name"/>
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="street" class="o_address_street"/>
+								<field name="street2" class="o_address_street"/>
+								<field name="city" placeholder="City" class="o_address_city"/>
+								<field name="state_id" class="o_address_state" style="pointer-events:none;"/>
+								<field name="zip" class="o_address_zip"/>
+								<field name="country_id" style="pointer-events:none;"/>
+								<field name="id_ph"/>
+								<field name="active_ph"/>
+							</group>
+							<group>
+								<field name="comp_views"/>
+								<field name="age"/>
+								<field name="birthday"/>
+								<field name="parents"/>
+								<field name="vat"/>
+								<field name="passport"/>
+								<field name="phone" widget="phone"/>
+								<field name="mobile" widget="phone"/>
+								<field name="email" widget="email"/>
+							</group>
+						</group>
+						<notebook colspan="4">
+							<page string="Observaciones" name="comments">
+								<field name="comments"/>
+							</page>
+							<page string="Ciudadanos misma dirección" name="same_address">
+								<field name="citizen_ids" options="{'no_create': True}">
+									<tree>
+										<field name="name"/>
+										<field name="phone" />
+										<field name="mobile"/>
+										<field name="email"/>
+										<field name="age"/>
+										<field name="active_ph"/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- explicit search view definition -->
+		<record id="az_padron.citizen_search_view" model="ir.ui.view">
+			<field name="name">az_padron.citizen.search.view</field>
+			<field name="model">res.partner</field>
+			<field name="arch" type="xml">
+				<search string="Buscar ciudadano">
+					<field name="name" filter_domain="['|', '|', '|', '|', ('display_name', 'ilike', self), ('ref', '=', self), ('email', 'ilike', self), ('vat', 'ilike', self), ('passport', 'ilike', self), ('street', 'ilike', self)]"/>
+					<field name="vat" filter_domain="['|', ('vat', 'ilike', self), ('passport', 'ilike', self)]"/>
+					<field name="street" filter_domain="[('street', 'ilike', self)]"/>
+					<field name="email" filter_domain="[('email', 'ilike', self)]"/>
+					<field name="phone" filter_domain="['|', ('phone', 'ilike', self), ('mobile', 'ilike', self)]"/>
+				</search>
+			</field>
+		</record>
+
+		<!-- actions opening views on models -->
+		<record id="az_padron.citizen_action_window" model="ir.actions.act_window">
+			<field name="name">Ciudadanos</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">res.partner</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="az_padron.citizen_search_view"/>
+			<field name="domain">[('is_padron', '=', True)]</field>
+		</record>
+
+		<record id="az_padron.citizen_action_window_tree_view" model="ir.actions.act_window.view">
+			<field name="sequence" eval="1"/>
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="az_padron.citizen_list"/>
+			<field name="act_window_id" ref="az_padron.citizen_action_window"/>
+		</record>
+
+		<record id="az_padron.citizen_action_window_form_view" model="ir.actions.act_window.view">
+			<field name="sequence" eval="2"/>
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="az_padron.citizen_form"/>
+			<field name="act_window_id" ref="az_padron.citizen_action_window"/>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_az_padron_citizen,az_padron.citizen,model_res_partner,az_padron.az_padron_user_access,1,1,0,0
+access_az_padron_history,az_padron.history,model_az_padron_history,az_padron.az_padron_user_access,1,1,1,0
+access_az_padron_citizen,az_padron.citizen,model_res_partner,az_padron.az_padron_manager_access,1,1,1,1
+access_az_padron_history,az_padron.history,model_az_padron_history,az_padron.az_padron_manager_access,1,1,1,1

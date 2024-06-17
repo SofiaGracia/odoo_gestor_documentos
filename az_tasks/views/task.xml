@@ -1,0 +1,99 @@
+<odoo>
+	<data>
+		<!-- explicit list view definition -->
+
+		<record model="ir.ui.view" id="az_tasks.task_list">
+			<field name="name">az_tasks task list</field>
+			<field name="model">az_tasks.task</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="expedient_id"/>
+					<field name="name"/>
+					<field name="state_id"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- explicit kanban view definition -->
+
+		<record model="ir.ui.view" id="az_tasks.task_kanban">
+			<field name="name">az_tasks task kanban</field>
+			<field name="model">az_tasks.task</field>
+			<field name="arch" type="xml">
+				<kanban default_group_by="state_id" expand_orderby="all">
+					<templates>
+						<t t-name="kanban-box">
+							<div t-attf-class="oe_kanban_card oe_kanban_global_click">
+								<div class="o_project_kanban_main">
+									<div class="col-xs-6" style="text-align: center;">
+										<strong>
+											<span>
+												<field name="name"/>
+											</span>
+										</strong>
+									</div>
+								</div>
+								<field name="state_id"/>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+
+		<!-- explicit form view definition -->
+
+		<record id="az_tasks.task_form" model="ir.ui.view">
+			<field name="name">Tarea</field>
+			<field name="model">az_tasks.task</field>
+			<field name="arch" type="xml">
+				<form string="Tarea">
+					<sheet>
+						<div class="oe_title mb24">
+							<h1>
+								<field name="name" placeholder="Nombre"/>
+							</h1>
+						</div>
+						<group>
+							<field name="expedient_id"/>
+							<field name="state_id"/>
+							<field name="description"/>
+						</group>
+						<notebook colspan="4">
+							<page string="Asignados" name="assigned_persons">
+								<field name="assigned_persons"/>
+							</page>
+						</notebook>
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids"/>
+						<field name="activity_ids"/>
+						<field name="message_ids"/>
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<!-- explicit search view definition -->
+
+		<record id="az_tasks.task_search_view" model="ir.ui.view">
+			<field name="name">az_tasks.task.search.view</field>
+			<field name="model">az_tasks.task</field>
+			<field name="arch" type="xml">
+				<search string="Tareas">
+					<filter string="Expediente" name="group_task_expedient_id" context="{'group_by':'expedient_id'}"/>  
+				</search>
+			</field>
+		</record>
+
+		<!-- actions opening views on models -->
+
+		<record model="ir.actions.act_window" id="az_tasks.task_action_window">
+			<field name="name">Tarea</field>
+			<field name="res_model">az_tasks.task</field>
+			<field name="view_mode">kanban,tree,form</field>
+			<field name="context">{"search_default_group_task_expedient_id":1}</field>
+		</record>
+
+	</data>
+</odoo>

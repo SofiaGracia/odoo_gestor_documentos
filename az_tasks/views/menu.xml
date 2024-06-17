@@ -1,0 +1,22 @@
+<odoo>
+	<data>
+		<!-- Top menu item -->
+
+		<!-- menu categories -->
+
+		<menuitem name="Tareas" id="az_tasks.task_menu_1_list" 
+			parent="az_expedients.menu_root"
+			action="az_tasks.task_action_window"
+			sequence="3"
+		/>
+
+		<!-- actions -->
+
+		<menuitem name="Estados tarea" id="az_tasks.statetask_menu_1_list" 
+			parent="az_expedients.expedient_menu_1"
+			action="az_tasks.statetask_action_window"
+			sequence="2"
+		/>
+
+	</data>
+</odoo>

@@ -1,0 +1,18 @@
+<odoo>
+	<data>
+		<record model="ir.module.category" id="az_padron.az_padron_module_management">
+			<field name="name">Padrón</field>
+			<field name="description">Permisos de acceso para el módulo Padrón</field>
+			<field name="sequence">10</field>
+		</record>
+
+		<record id="az_padron.az_padron_user_access" model="res.groups">
+			<field name="name">User</field>
+			<field name="category_id" ref="az_padron.az_padron_module_management"/>
+		</record>
+		<record id="az_padron.az_padron_manager_access" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="az_padron.az_padron_module_management"/>
+		</record>
+	</data>
+</odoo>

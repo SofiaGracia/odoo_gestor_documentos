@@ -1,0 +1,555 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* az_documents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240523\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-30 08:12+0000\n"
+"PO-Revision-Date: 2024-05-30 08:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "AA"
+msgstr ""
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__abreviaturaTipoDocumento
+msgid "Abreviatura del tipo de documento"
+msgstr "Abreviatura del tipus de document"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Abreviatura del tipo de documento, como DE para resolución."
+msgstr "Abreviatura del tipus de document, com DE per a resolució."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_needaction
+msgid "Action Needed"
+msgstr "Acció Necessària"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_ids
+msgid "Activities"
+msgstr "Activitats"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoració d'Excepció d'Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_state
+msgid "Activity State"
+msgstr "Estat de l'Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona del Tipus d'Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__alcance
+msgid "Alcance y contenido del documento"
+msgstr "Abast i contingut del document"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_attachment_count
+msgid "Attachment Count"
+msgstr "Comptador d'Adjunts"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__codigoActividad
+msgid "Codigo de la actividad"
+msgstr "Codi de l'activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__color
+msgid "Color Index"
+msgstr "Índex de Color"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__create_uid
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__create_date
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__codigo
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_tree
+msgid "Código del documento"
+msgstr "Codi del document"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Código único para identificar la actividad."
+msgstr "Codi únic per a identificar l'activitat."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Descargar"
+msgstr "Descarregar"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__description
+msgid "Descripción"
+msgstr "Descripció"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Descripción detallada aquí"
+msgstr "Descripció detallada ací"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__display_name
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__display_name
+msgid "Display Name"
+msgstr "Nom Mostrat"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.document_search_view
+msgid "Document"
+msgstr "Document"
+
+#. module: az_documents
+#: model:ir.actions.act_window,name:az_documents.document_action_window
+#: model:ir.model.fields,field_description:az_documents.field_az_expedients_expedient__documents_ids
+#: model:ir.ui.menu,name:az_documents.document_menu_1_list
+#: model_terms:ir.ui.view,arch_db:az_documents.expedient_form
+msgid "Documentos"
+msgstr "Documents"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__documentos_relacionados
+msgid "Documentos relacionados"
+msgstr "Documents relacionats"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Documentos relacionados a este documento."
+msgstr "Documents relacionats amb este document."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Ej: 0001"
+msgstr "Ex: 0001"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Ej: DE"
+msgstr "Ex: DE"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__ejercicio
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Ejercicio del documento."
+msgstr "Exercici del document."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Escribe un título aquí"
+msgstr "Escriu un títol ací"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid ""
+"Espacio para escribir una descripción extensa del contenido o contexto del "
+"documento."
+msgstr ""
+"Espai per a escriure una descripció extensa del contingut o context del "
+"document."
+
+#. module: az_documents
+#: model:ir.model,name:az_documents.model_az_documents_tag
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__tag_ids
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__name
+#: model_terms:ir.ui.view,arch_db:az_documents.tag_form
+msgid "Etiqueta"
+msgstr "Etiqueta"
+
+#. module: az_documents
+#: model:ir.actions.act_window,name:az_documents.tag_action_window
+#: model:ir.ui.menu,name:az_documents.tag_menu_1_list
+msgid "Etiquetas"
+msgstr "Etiquetes"
+
+#. module: az_documents
+#: model:ir.model,name:az_documents.model_az_expedients_expedient
+#: model_terms:ir.ui.view,arch_db:az_documents.document_search_view
+msgid "Expediente"
+msgstr "Expedient"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__expedient_id
+msgid "Expediente principal"
+msgstr "Expedient principal"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Expediente principal asociado a este documento."
+msgstr "Expedient principal associat a este document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__expedientes
+msgid "Expedientes relacionados"
+msgstr "Expedients relacionats"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__registration_date
+msgid "Fecha"
+msgstr "Data"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Fecha de creación de este documento."
+msgstr "Data de creació d'este document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_follower_ids
+msgid "Followers"
+msgstr "Seguidors"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidors (Socis)"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona font awesome per ex. fa-tasks"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__has_message
+msgid "Has Message"
+msgstr "Té Missatge"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__id
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__id
+msgid "ID"
+msgstr "ID"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per a indicar una activitat d'excepció."
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si està marcat, nous missatges requereixen la teua atenció."
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__message_has_error
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si està marcat, alguns missatges tenen un error de lliurament."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Introduce a el registrador del documento."
+msgstr "Introduïx el registrador del document."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Introduce el código"
+msgstr "Introduïx el codi"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Introduce el tipo del documento."
+msgstr "Introduïx el tipus de document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_is_follower
+msgid "Is Follower"
+msgstr "És Seguidor"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document____last_update
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag____last_update
+msgid "Last Modified on"
+msgstr "Última Modificació el"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__write_uid
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualització per"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__write_date
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_tag__write_date
+msgid "Last Updated on"
+msgstr "Última Actualització el"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__interesados
+msgid "Lista de interesados"
+msgstr "Llista d'interessats"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunt Principal"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Lliurament del Missatge"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_id
+msgid "Message ID"
+msgstr "ID del Missatge"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_ids
+msgid "Messages"
+msgstr "Missatges"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Data Límit de la Meua Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Pròxim Esdeveniment del Calendari d'Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Pròxima Data Límit d'Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resum de la Pròxima Activitat"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipus de la Pròxima Activitat"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.tag_form
+msgid "Nombre"
+msgstr "Nom"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__nombre_archivo
+msgid "Nombre Archivo"
+msgstr "Nom de l'Arxiu"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_tree
+msgid "Nombre del documento"
+msgstr "Nom del document"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__notas_adicionales
+msgid "Notas adicionales"
+msgstr "Notes addicionals"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Notas adicionales que no encajan con otro campo de este documento."
+msgstr "Notes addicionals que no encaixen amb un altre camp d'este document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número d'Accions"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número d'Errors"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de missatges que requerixen acció"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de missatges amb error de lliurament"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__numOrdenDocEnExp
+msgid "Núm. orden del documento en el expediente"
+msgstr "Núm. d'ordre del document en l'expedient"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Número asignado al expediente."
+msgstr "Número assignat a l'expedient."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__numeroExpediente
+msgid "Número de Expediente"
+msgstr "Número d'Expedient"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Número de orden del documento dentro del expediente."
+msgstr "Número d'ordre del document dins de l'expedient."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Número secuencial"
+msgstr "Número seqüencial"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Partes interesadas o afectadas por el expediente."
+msgstr "Parts interessades o afectades per l'expedient."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__register
+msgid "Persona tramitadora"
+msgstr "Persona tramitadora"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Previsualizar"
+msgstr "Previsualitzar"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Registrador del documento."
+msgstr "Registrador del document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__activity_user_id
+msgid "Responsible User"
+msgstr "Usuari Responsable"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Ruta del documento."
+msgstr "Ruta del document."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de Lliurament de SMS"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Seleccione uno o varios expedientes relacionados."
+msgstr "Seleccioneu un o diversos expedients relacionats."
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estat basat en activitats\n"
+"Vençut: La data de venciment ja ha passat\n"
+"Avuí: La data d'activitat és huí\n"
+"Planejat: Activitats futures."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid ""
+"Sube el documento relacionado. Asegúrate de que el formato sea compatible."
+msgstr ""
+"Puja el document relacionat. Assegura't que el format siga compatible."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__documento_file
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Subir archivo"
+msgstr "Pujar arxiu"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Test"
+msgstr "Prova"
+
+#. module: az_documents
+#: model:ir.model.constraint,message:az_documents.constraint_az_documents_tag_check_unique_name
+msgid "The name must be unique"
+msgstr "El nom ha de ser únic"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__tipo_archivo
+msgid "Tipo de Archivo"
+msgstr "Tipus d'Arxiu"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Tipo de archivo, como pdf, odt o ods."
+msgstr "Tipus d'arxiu, com pdf, odt o ods."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__titulo
+msgid "Titulo"
+msgstr "Títol"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipus de l'activitat d'excepció en el registre."
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Título del documento o expediente."
+msgstr "Títol del document o expedient."
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__file_url
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_tree
+msgid "URL del Fichero"
+msgstr "URL del Fitxer"
+
+#. module: az_documents
+#: model_terms:ir.ui.view,arch_db:az_documents.az_documents_document_form
+msgid "Ver completo"
+msgstr "Veure complet"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__website_message_ids
+msgid "Website Messages"
+msgstr "Missatges del Web"
+
+#. module: az_documents
+#: model:ir.model.fields,help:az_documents.field_az_documents_document__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicació del web"
+
+#. module: az_documents
+#: model:ir.model,name:az_documents.model_az_documents_document
+msgid "gestor"
+msgstr "gestor"
+
+#. module: az_documents
+#: model:ir.model.fields,field_description:az_documents.field_az_documents_document__name
+msgid "Nombre"
+msgstr "Nom"

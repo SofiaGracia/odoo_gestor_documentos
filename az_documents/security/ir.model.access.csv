@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_az_documents_document,az_documents.document,model_az_documents_document,base.group_user,1,1,1,1
+access_az_documents_tag,az_documents.tag,model_az_documents_tag,base.group_user,1,1,1,1

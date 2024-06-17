@@ -1,0 +1,47 @@
+<odoo>
+	<data>
+		<!-- explicit list view definition -->
+
+		<record model="ir.ui.view" id="az_tasks.statetask_list">
+			<field name="name">az_tasks statetask list</field>
+			<field name="model">az_tasks.statetask</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- explicit kanban view definition -->
+
+		<!-- explicit form view definition -->
+
+		<record id="az_tasks.statetask_form" model="ir.ui.view">
+			<field name="name">Estado tarea</field>
+			<field name="model">az_tasks.statetask</field>
+			<field name="arch" type="xml">
+				<form string="Estado tarea">
+					<sheet>
+						<div class="oe_title mb24">
+							<h1>
+								<field name="name" placeholder="Nombre"/>
+							</h1>
+						</div>
+						<group>
+							<field name="description"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- actions opening views on models -->
+
+		<record model="ir.actions.act_window" id="az_tasks.statetask_action_window">
+			<field name="name">Estados tarea</field>
+			<field name="res_model">az_tasks.statetask</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+	</data>
+</odoo>

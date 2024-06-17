@@ -1,0 +1,22 @@
+<odoo>
+	<data>
+		<!-- Top menu item -->
+
+		<!-- menu categories -->
+
+		<menuitem name="Documentos" id="az_documents.document_menu_1_list" 
+			parent="az_expedients.menu_root"
+			action="az_documents.document_action_window"
+			sequence="2"
+		/>
+
+		<!-- actions -->
+
+		<menuitem name="Etiquetas" id="az_documents.tag_menu_1_list" 
+			parent="az_expedients.expedient_menu_1"
+			action="az_documents.tag_action_window"
+			sequence="4"
+		/>
+
+	</data>
+</odoo>
