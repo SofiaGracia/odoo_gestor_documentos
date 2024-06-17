@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_az_expedients_expedient,az_expedients.expedient,model_az_expedients_expedient,base.group_user,1,1,1,1
-access_az_expedients_etype,az_expedients.etype,model_az_expedients_etype,base.group_user,1,1,1,1
-access_az_expedients_state,az_expedients.state,model_az_expedients_state,base.group_user,1,1,1,1
-access_az_expedients_statetask,az_expedients.statetask,model_az_expedients_statetask,base.group_user,1,1,1,1
-access_az_expedients_task,az_expedients.task,model_az_expedients_task,base.group_user,1,1,1,1
-access_az_expedients_tag,az_expedients.tag,model_az_expedients_tag,base.group_user,1,1,1,1
-access_az_expedients_documentos,az_expedients.tag,model_az_expedients_documentos,base.group_user,1,1,1,1
